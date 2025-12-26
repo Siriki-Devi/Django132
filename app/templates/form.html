@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<h2>Personal Details Form</h2>
+
+<form method="POST" action="{% url 'form' %}">
+    {% csrf_token %}
+    Name: <input type="text" name="name"><br>
+    Age: <input type="number" name="age"><br>
+    DOB: <input type="date" name="dob"><br>
+    First Movie: <input type="text" name="first_movie"><br>
+    Location: <input type="text" name="location"><br>
+    Movies: <input type="text" name="movies"><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

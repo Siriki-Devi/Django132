@@ -1,0 +1,51 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+form {
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    margin-top: 15px;
+}
